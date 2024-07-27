@@ -7,10 +7,10 @@ methods = [
     # "count",
     # "encode",
     # "endswith",
-    "expandtabs",
+    # "expandtabs",
     # "find",
-    "format",
-    "format_map",
+    # "format",
+    # "format_map",
     # "index",
     # "isalnum",
     # "isalpha",
@@ -27,22 +27,22 @@ methods = [
     # "join",
     # "ljust",
     # "lower",
-    "lstrip",
+    # "lstrip",
     "maketrans",
-    "partition",
-    "removeprefix",
-    "removesuffix",
+    # "partition",
+    # "removeprefix",
+    # "removesuffix",
     "replace",
     # "rfind",
     # "rindex",
     # "rjust",
-    "rpartition",
-    "rsplit",
-    "rstrip",
-    "split",
-    "splitlines",
+    # "rpartition",
+    # "rsplit",
+    # "rstrip",
+    # "split",
+    # "splitlines",
     # "startswith",
-    "strip",
+    # "strip",
     # "swapcase",
     # "title",
     "translate",
@@ -84,7 +84,7 @@ name = "ram nageena chauhan"
 #
 # print(st1.casefold() == st2.casefold())
 
-print(st)
+# print(st)
 # print(st.center(5))
 # print(st.center(50))
 # print(st.center(50, "-"))
@@ -162,8 +162,113 @@ st2 = "siv"
 # x = "ram,shyam,mohan".split(",")
 # print(x)
 
-d = "print(st[6::2])"
-print(d)
-d = d.split("[")[-1]
-d = d.split("]")[0]
-print(d)
+# d = "print(st[6::2])"
+# print(d)
+# d = d.split("[")[-1]
+# d = d.split("]")[0]
+# print(d)
+
+
+# st = """This is a pen.
+# this is a another pen."""
+#
+# print(st.splitlines())
+
+# st1 = "My name is {} and age {}"
+#
+# name = "Amit"
+# age = 30
+#
+# ss = st1.format(name, age)
+# print(ss)
+
+# d = {"name": "Ram", "age": 30, "salary": 2343}
+#
+# st1 = "My name is {name} and age {age}"
+#
+# stq = st1.format_map(d)
+# print(stq)
+
+
+# st = "    this is     strip example      "
+# print(st)
+# print(st.strip())
+# print(st.lstrip())
+# print(st.rstrip())
+
+# st = "This is cow."
+
+# p = st.partition("is")
+# p = st.rpartition("is")
+# print(p)
+
+
+# l = "Total number of sheet = 4032\n"
+# l = l.strip()
+# l = l.partition("=")
+# print(int(l[-1].strip()) + 12)
+
+# st = "This is cow."
+# things = "fox"
+# st1 = st.replace("cow", things)
+#
+# print(st1)
+
+
+# st = "This is cow. cow cow"
+
+# old_val = "cow"
+# new_val = "ox"
+# print(st.replace(old_val, new_val, 2))
+
+# st = "auto_replace_file"
+
+# print(st.removeprefix("auto_"))
+# print(st.removesuffix("_file"))
+#
+# st = """Since the very beginning,
+# we’ve offered a variety of tools and libraries for developers,
+# administrators and architects to perform all kind of actions:
+# from spinning up Virtual"""
+#
+# st_1 = "aeiou"
+# st_2 = "12345"
+
+# info = str.maketrans(st_1, st_2)
+
+# d = {ord("a"): ord("1")}
+# print(info)
+
+# print(ord("a"))
+
+# print(st)
+# print("*" * 100)
+# new_st = st.translate(d)
+# print(new_st)
+
+# for x in range(97, 96 + 27):
+#     print(chr(x), end=" => ")
+#     print(x, end=" => ")
+#     print(chr(x - 32), end=" => ")
+#     print(x - 32)
+# counter = 0
+# for x in range(0, 256):
+#     if counter == 10:
+#         print()
+#         counter = 0
+#     print(x, chr(x), end=" ")
+#     counter += 1
+
+print(st)
+
+# for s in st:
+#     print(s)
+
+# word_list = st.split()
+# print(word_list)
+# #
+# # for x in st.split():
+# #     print(x)
+# d = list(st)
+# d = set(st)
+# print(d)
