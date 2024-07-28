@@ -1,6 +1,6 @@
 """list"""
 
-import random
+# import random
 
 # lst = []
 # lst = list()
@@ -155,3 +155,7 @@ print(dir(t))
 
 
 print(t[1:3])
+
+# d = [x for x in range(1, 101) if x < 20]
+#
+# print(d)
