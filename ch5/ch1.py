@@ -115,28 +115,28 @@ methods = [
 # print("-" * 40)
 # print(d)
 # print(d1)
-
-students = {
-    "1": {
-        "1": {"name": "Ram"},
-        "2": {"name": "ajay"},
-        "3": {"name": "priya"},
-    },
-    "2": {
-        "1": {"name": "amit"},
-        "2": {"name": "suresh"},
-        "3": {"name": "anjali"},
-    },
-    "3": {
-        "1": {"name": "anamika"},
-        "2": {"name": "advika", "marks": [12, 3, 2, 12, 4, 1]},
-        "3": {"name": "ayush", "marks": None},
-    },
-}
+#
+# students = {
+#     "1": {
+#         "1": {"name": "Ram"},
+#         "2": {"name": "ajay"},
+#         "3": {"name": "priya"},
+#     },
+#     "2": {
+#         "1": {"name": "amit"},
+#         "2": {"name": "suresh"},
+#         "3": {"name": "anjali"},
+#     },
+#     "3": {
+#         "1": {"name": "anamika"},
+#         "2": {"name": "advika", "marks": [12, 3, 2, 12, 4, 1]},
+#         "3": {"name": "ayush", "marks": None},
+#     },
+# }
 
 # print(students["3"]["2"])
 
 data = json.dumps(students, indent=4)
-f = open("abc.json", "w")
-f.write(data)
-f.close()
+# f = open("abc.json", "w")
+# f.write(data)
+# f.close()
