@@ -1,0 +1,66 @@
+Index: ch8/python_loops.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"for loop , while loop\"\"\"\r\n\r\n# lst = range(10)\r\n# print(lst)\r\n# lst = list(range(10))  # start,  end, step # 1 argument end_value\r\n# print(lst)\r\n#\r\n# lst = list(range(5, 10))  # 1 argument start_value. 2nd end\r\n# print(lst)\r\n#\r\n# lst = list(range(5, 10, 2))  # 1 argument start_value. 2nd end, 3rd step\r\n# print(lst)\r\n\r\n# for x in range(10):\r\n#     print(x, end=\" \")\r\n\r\n# for x in range(11, 21):\r\n#     print(x, \"krishna\")\r\n\r\n\r\n# num = int(input(\"Enter number for printing table : \"))\r\n#\r\n# for x in range(1, 11):\r\n#     print(num * x)\r\n\r\n# for x in range(2, 21):\r\n#     for y in range(1, 11):\r\n#         print(f\"{x * y:4}\", end=\" \")\r\n#     print()\r\n# name_caps = \"R\"\r\n# for x in range(1, 6):\r\n#     for y in range(1, 6):\r\n#         if x == y and x == 3:\r\n#             print(name_caps, end=\"\")\r\n#         else:\r\n#             print(\"*\", end=\"\")\r\n#     print()\r\n\r\n# for x in range(1, 6):\r\n#     for y in range(1, x + 1):\r\n#         print(\"*\", end=\"\")\r\n#         # if x == y:\r\n#         #     print(\"*\", end=\"\")\r\n#         # else:\r\n#         #     print(end=\"\")\r\n#     print()\r\n\r\n\r\n# for x in range(1, 6):\r\n#     for z in range(1, 6 - x):\r\n#         print(\" \", end=\"\")\r\n#     for y in range(1, x + 1):\r\n#         print(\"*\", end=\"\")\r\n#     print()\r\n\r\n\r\n# for x in range(1, 6):\r\n#     for z in range(1, 6 - x):\r\n#         print(\" \", end=\"\")\r\n#     for y in range(1, x + 1):\r\n#         print(\"* \", end=\"\")\r\n#     print()\r\n\r\n# x = \"ram\" * 3\r\n# print(x)\r\n\r\n# for x in range(1, 6):\r\n#     print(\"*\" * x)\r\n#\r\n# for x in range(1, 6):\r\n#     print(\"{}{}\".format(\" \" * (5 - x), \"*\" * x))\r\n#\r\n# for x in range(1, 6):\r\n#     print(\"{}{}\".format(\" \" * (5 - x), \"* \" * x))\r\n\r\n\r\n# st = \"hello python\"\r\n# for x in st:\r\n#     print(x, end=\" \")\r\n\r\n# lst = [1, 2, 3, 12, 32, 34, 12, 4]\r\n#\r\n# for val in lst:\r\n#     print(val)\r\n\r\n\r\n# t = (1, 2, 3, 12, 32, 34, 12, 4)\r\n#\r\n# for val in t:\r\n#     print(val)\r\n\r\n# s = {1, 2, 3, 12, 32, 34, 12, 4}\r\n#\r\n# for val in s:\r\n#     print(val)\r\n\r\n# d = {x: x * x for x in range(1, 5)}\r\n# print(d)\r\n# print(type(d))\r\n#\r\n# for k in d:\r\n#     print(k, d[k])\r\n\r\n# for x in {1: 1, 2: 4, 3: 9}:\r\n#     print(x)\r\n\r\n# t = 0\r\n# for x in range(1, 1001):\r\n#     t += x\r\n# print(t)\r\n
+===================================================================
+diff --git a/ch8/python_loops.py b/ch8/python_loops.py
+--- a/ch8/python_loops.py	
++++ b/ch8/python_loops.py	
+@@ -28,8 +28,8 @@
+ #         print(f"{x * y:4}", end=" ")
+ #     print()
+ # name_caps = "R"
+-# for x in range(1, 6):
+-#     for y in range(1, 6):
++# for x in range(1, 6):  # 1,2,3,4,5
++#     for y in range(1, 6):  # 1,2,3,4,5
+ #         if x == y and x == 3:
+ #             print(name_caps, end="")
+ #         else:
+@@ -45,7 +45,6 @@
+ #         #     print(end="")
+ #     print()
+ 
+-
+ # for x in range(1, 6):
+ #     for z in range(1, 6 - x):
+ #         print(" ", end="")
+@@ -53,7 +52,6 @@
+ #         print("*", end="")
+ #     print()
+ 
+-
+ # for x in range(1, 6):
+ #     for z in range(1, 6 - x):
+ #         print(" ", end="")
+@@ -108,3 +106,30 @@
+ # for x in range(1, 1001):
+ #     t += x
+ # print(t)
++
++# counter = 2
++# for x in range(1, 6):
++#     for z in range(1, 6 - x):
++#         print(" ", end="")
++#     for y in range(1, counter):
++#         print("*", end="")
++#     counter += 2
++#     print()
++
++# x = 2
++#
++# st = "{}{}".format("-" * (5 - x), "* " * x)
++#
++# print(st)
++
++# st = "hello python"
++# new_st = st.replace(" ", "")
++#
++# print(new_st)
++#
++# val = " ".join(new_st)
++# print(val)
++# x = 100000
++# y = 3000000
++# print(f"{x:7}")
++# print("{}".format(y))
