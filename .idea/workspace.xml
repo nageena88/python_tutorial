@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2a87ec38-aa2c-476e-a512-c518f8f24c7c" name="Changes" comment="added new file of set and if">
       <change afterPath="$PROJECT_DIR$/ch8/while_loop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch8/python_loops.py" beforeDir="false" afterPath="$PROJECT_DIR$/ch8/python_loops.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +30,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/str_section" />
+        <entry key="$PROJECT_DIR$" value="feature/loops" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +66,6 @@
     "Python.python_loops.executor": "Run",
     "Python.while_loop.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/loops",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "E:/python_trainings/new_batch_2_2024",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
