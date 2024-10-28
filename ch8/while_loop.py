@@ -30,7 +30,6 @@
 #     if counter == 10:
 #         break
 
-
 # pass_word = "Password_1"
 #
 # counter = 3

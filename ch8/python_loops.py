@@ -50,9 +50,8 @@
 #     for z in range(1, 6 - x):
 #         print(" ", end="")
 #     for y in range(1, x + 1):
-#         print("*", end="")
+#         print("* ", end="")
 #     print()
-
 
 # for x in range(1, 6):
 #     for z in range(1, 6 - x):
@@ -72,7 +71,6 @@
 #
 # for x in range(1, 6):
 #     print("{}{}".format(" " * (5 - x), "* " * x))
-
 
 # st = "hello python"
 # for x in st:
@@ -108,3 +106,10 @@
 # for x in range(1, 1001):
 #     t += x
 # print(t)
+
+st = input("enter palindrome ")
+
+if st == st[::-1]:
+    print(st)
+else:
+    print("not")
